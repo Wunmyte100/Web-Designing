@@ -8,7 +8,7 @@
 <body>
     <h1>Learnings from PLP</h1>
     <p>This is an opportunity to begin my career in tech, I am glad about it.</p>
-    <a href="https://plpacademy.powerlearnproject.org/"> <title>Click 
+        <a href="https://plpacademy.powerlearnproject.org/"> <title>Click 
         to visit PLP website</title> <u>Visit Power Learn Project Website</u></a>
         <br/>
         <br/>
@@ -17,19 +17,64 @@
         <br>
         <br>
         <img src="https://images.pexels.com/photos/7414049/pexels-photo-7414049.jpeg?auto=compress&cs=tinysrgb&w=600" 
-        alt="Learning and entrepreneurship" 
-        width="600" height="380">
-        <br>
-        <br>
-    <h2>Register Now</h2>
-    <p>You can register with me to learn free software engineering</p>
-    <p>fill the form below;</p>
-        <form action="/submit_form" method="Post">
+        alt="Learning and entrepreneurship" width="600" height="380">
+        <br><br>
+
+        <h2>Register Now</h2>
+        <p>You can register with me to learn free software engineering</p>
+        <p>fill the form below;</p>
+        <form action="process_form.php" method="post" target="_blank" autocomplete="on">
+            <fieldset>
+                <legend>Input your details:</legend>
             <label for="name"> Name:</label>
             <input type="text" id="name" name="name"><br><br>
             <label for="email"> Email:</label>
             <input type="email" id="email" name="email"><br><br>
-            <input type="submit" value="submit"><br><br>
+            </fieldset>
+            <p>Choose your favorite Web language:</p>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label><br><br>
+
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br><br>
+            <input type="submit" value="submit">
+        </form> <!--This form is going to be stored in-->
+        <br>
+        <textarea name="message" rows="10" cols="30">
+        
+            </textarea>
+        <button type="button" onclick="alert('Thank you!')">Submit!</button>
+
+        <form action="/action_page.php"
+            oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+            <input type="number"  id="a" name="a" value="1000"> +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+            <br><br>
+            <input type="submit">
         </form>
+        <form>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+          </form>
 </body>
 </html>
